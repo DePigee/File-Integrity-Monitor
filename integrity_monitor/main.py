@@ -1,7 +1,6 @@
-from .hasher import hash_file
+import sys
 
-def main():
-     hashed_file = hash_file("test.txt")
-     print(hashed_file)
+from .cli import main
 
-main()
+if __name__ == "__main__":
+    sys.exit(main())
